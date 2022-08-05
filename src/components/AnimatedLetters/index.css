@@ -16,8 +16,8 @@
 }
 
 .text-animate-hover:hover {
-  -webkit-animation: rubberBand 1s;
-          animation: rubberBand 1s;
+  -webkit-animation: jello 1s;
+          animation: jello 1s;
   color: #ffd700;
 }
 

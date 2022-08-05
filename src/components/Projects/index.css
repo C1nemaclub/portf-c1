@@ -1,0 +1,18 @@
+.h1 {
+  border: 2px solid red;
+  font-size: 4rem;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+  padding: 0.4rem 10rem;
+  place-items: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=index.css.map */

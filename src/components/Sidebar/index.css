@@ -1,8 +1,9 @@
 .nav-bar {
-  background: #181818;
-  width: 80px;
+  background-color: #363636;
+  width: 10%;
+  min-width: 150px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 3;
   min-height: 500px;
@@ -23,7 +24,7 @@
 
 .nav-bar .logo .sub-logo {
   display: block;
-  color: #cccc;
+  color: #000000;
   text-decoration: none;
   margin: 8px auto;
   text-align: center;
@@ -42,7 +43,7 @@ nav {
 
 nav a {
   font-size: 2.2rem;
-  color: #cccc;
+  color: rgba(0, 0, 0, 0.8);
   display: block;
   line-height: 51px;
   position: relative;
@@ -55,7 +56,7 @@ nav a i {
 }
 
 nav a:hover {
-  color: yellow;
+  color: #000000;
 }
 
 nav a:hover svg {
@@ -89,12 +90,16 @@ nav a:nth-child(2)::after {
   content: "ABOUT";
 }
 
+nav a:nth-child(3)::after {
+  content: "PROJECTS";
+}
+
 nav a:last-child::after {
   content: "CONTACT";
 }
 
-nav a a.active svg {
-  color: yellow;
+nav a.active svg {
+  color: #ffd700;
 }
 
 ul {

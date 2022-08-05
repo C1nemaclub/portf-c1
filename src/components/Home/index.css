@@ -11,30 +11,30 @@
 .home-page h1 {
   color: #fff;
   font-size: 3.5rem;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans;
   font-weight: 400;
+  max-width: 450px;
 }
 
 .home-page h1::before {
   content: "<h1>";
   font-family: "Helvetica Neue", Helvetica, Arial;
   color: #ffd700;
-  font-size: 1rem;
+  font-size: 1.1rem;
   position: absolute;
   margin-top: -40px;
-  left: 15px;
+  left: 0;
   opacity: 0.6;
 }
 
 .home-page h1::after {
-  content: "</h1>";
+  content: "<h1/>";
   font-family: "Helvetica Neue", Helvetica, Arial;
   color: #ffd700;
-  font-size: 1rem;
+  font-size: 1.1rem;
   position: absolute;
   margin-top: 20px;
-  margin-left: 20px;
-  left: 100%;
+  left: 0;
+  top: 55%;
   -webkit-animation: fadeIn 1s 1.7s backwards;
           animation: fadeIn 1s 1.7s backwards;
   opacity: 0.6;
@@ -53,33 +53,36 @@
 
 h2 {
   color: #8d8d8d;
-  margin-top: 20px;
+  margin-top: 40px;
   font-weight: 400;
   font-size: 1rem;
-  font-family: "Helvetica Neue", Helvetica, Arial;
   letter-spacing: 3px;
   -webkit-animation: fadeIn 1s 1.8s backwards;
           animation: fadeIn 1s 1.8s backwards;
 }
 
 .flat-button {
-  color: #ffd700;
+  border: 0;
   font-size: 1.2rem;
-  font-weight: 400;
-  letter-spacing: 4px;
-  font-family: sans-serif;
   text-decoration: none;
-  padding: 10px 18px;
-  border: 1px solid #ffd700;
+  padding: 0.5rem 1.5rem;
+  background: #ffd700;
   margin-top: 25px;
+  -webkit-box-shadow: -5px 5px 1px 0px lightyellow;
+          box-shadow: -5px 5px 1px 0px lightyellow;
   float: left;
   -webkit-animation: fadeIn 1s 1.8s backwards;
           animation: fadeIn 1s 1.8s backwards;
   white-space: nowrap;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .flat-button:hover {
-  background: #ffd700;
-  color: #333;
+  background: #363636;
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=index.css.map */

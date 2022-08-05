@@ -1,0 +1,180 @@
+.card {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  grid-column: span 1;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  background-position: center center;
+}
+
+.card:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.card::after {
+  position: absolute;
+  content: "View Details";
+  background: rgba(22, 119, 205, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0rem;
+  color: white;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card:hover::after {
+  background: rgba(0, 122, 255, 0.9);
+  font-size: 1.5rem;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100px;
+}
+
+.projectScene {
+  width: 200px;
+  height: 280px;
+  -webkit-perspective: 400px;
+          perspective: 400px;
+  grid-column: span 1;
+  margin-bottom: 8rem;
+  -webkit-animation: bounceInLeft 0.5s 0.5s backwards;
+          animation: bounceInLeft 0.5s 0.5s backwards;
+}
+
+.projectCube {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 280px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.face-front {
+  -webkit-transform: translateZ(100px);
+          transform: translateZ(100px);
+}
+
+.face-front img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.face-front h3 {
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+}
+
+.face-right {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.5)), to(rgba(4, 9, 30, 0.5)));
+  background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5));
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+          transform: rotateY(90deg) translateZ(100px);
+}
+
+.content {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+.content .project-button {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.content .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.2rem;
+}
+
+.content .icons img {
+  width: 30px;
+}
+
+h3 {
+  font-size: 1rem;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+.projectCube:hover {
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+}
+/*# sourceMappingURL=index.css.map */

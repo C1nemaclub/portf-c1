@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap");
+
 html {
   font-size: 100%;
 }
@@ -6,11 +9,15 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   color: rgb(255, 255, 255);
-  background: #022c43;
-  overflow: hidden;
+  background: #6440cf;
+  //overflow: hidden;
   display: block;
+  // min-height: 100vh;
+  // height: 100%;
+  // width: 100%;
 }

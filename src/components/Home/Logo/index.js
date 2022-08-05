@@ -4,6 +4,7 @@ import LogoLines from "../../../assets/images/logo-lines.svg"
 import React, { useRef, useEffect } from "react"
 import gsap from "gsap-trial"
 import DrawSVGPlugin from "gsap-trial/DrawSVGPlugin"
+import GlitchSquiggly from "react-glitch-effect/core/GlitchSquiggly"
 
 export default function Logo() {
   const bgRef = useRef()
@@ -37,27 +38,29 @@ export default function Logo() {
   }, [])
   return (
     <div className="logo-container" ref={bgRef}>
-      <img ref={solidLogoRef} className="solid-logo" src={LogoS} alt="S" />
-      <svg
-        version="1.0"
-        xmlns="http://www.w3.org/2000/svg"
-        width="559.000000pt"
-        height="897.000000pt"
-        viewBox="0 0 559.000000 897.000000"
-        preserveAspectRatio="xMidYMid meet"
-      >
-        <metadata>
-          Created by potrace 1.16, written by Peter Selinger 2001-2019
-        </metadata>
-        <g
-          transform="translate(0.000000,897.000000) scale(0.100000,-0.100000)"
-          fill="#000000"
-          className="svg-container"
-          stroke="none"
+      <GlitchSquiggly scaleNoise={15}>
+        <img ref={solidLogoRef} className="solid-logo" src={LogoS} alt="S" />
+
+        <svg
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="559.000000pt"
+          height="897.000000pt"
+          viewBox="0 0 559.000000 897.000000"
+          preserveAspectRatio="xMidYMid meet"
         >
-          <path
-            ref={outlineLogoRef}
-            d="M2930 8959 c-344 -16 -623 -85 -915 -228 -231 -114 -406 -241 -600
+          <metadata>
+            Created by potrace 1.16, written by Peter Selinger 2001-2019
+          </metadata>
+          <g
+            transform="translate(0.000000,897.000000) scale(0.100000,-0.100000)"
+            fill="#000000"
+            className="svg-container"
+            stroke="none"
+          >
+            <path
+              ref={outlineLogoRef}
+              d="M2930 8959 c-344 -16 -623 -85 -915 -228 -231 -114 -406 -241 -600
 -436 -61 -60 -145 -137 -188 -169 -432 -325 -715 -757 -806 -1230 -109 -564
 21 -1117 384 -1641 250 -360 780 -877 1547 -1511 451 -373 600 -505 803 -708
 215 -216 275 -293 350 -448 55 -114 75 -188 82 -298 6 -96 -6 -173 -39 -257
@@ -118,9 +121,10 @@ m2095 -529 c212 -43 445 -176 659 -378 129 -121 368 -406 360 -429 -2 -6 -95
 -628 -188 -18 -606 -8 -779 19 -465 72 -868 244 -1222 521 -180 141 -402 382
 -575 625 -130 183 -342 550 -326 566 11 11 446 277 454 278 4 1 33 -45 65
 -101z"
-          />
-        </g>
-      </svg>
+            />
+          </g>
+        </svg>
+      </GlitchSquiggly>
     </div>
   )
 }

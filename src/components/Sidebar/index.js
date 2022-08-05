@@ -9,6 +9,7 @@ import {
   FaLinkedin,
   FaGithub,
   FaInstagram,
+  FaClipboard,
 } from "react-icons/fa"
 
 import React from "react"
@@ -31,6 +32,14 @@ export default function Sidebar() {
           to="/about"
         >
           <FaUser />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="projects-link"
+          to="/projects"
+        >
+          <FaClipboard />
         </NavLink>
         <NavLink
           exact="true"

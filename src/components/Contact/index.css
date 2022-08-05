@@ -1,57 +1,39 @@
 .contact-form {
   width: 100%;
-  margin-top: 400px;
-}
-
-.contact-form ul {
-  padding: 0;
-  margin: 0;
-}
-
-.contact-form ul li {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  margin-bottom: 10px;
-  overflow: hidden;
-  display: block;
+  margin-top: 6rem;
   position: relative;
-  opacity: 0;
-  -webkit-animation: fadeInUp 2s 2s;
-          animation: fadeInUp 2s 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  clear: both;
 }
 
-.contact-form ul li.half {
-  width: 49%;
-  margin-left: 2%;
-  float: left;
-  clear: none;
+.contact-form .input-group {
+  margin-bottom: 0.7rem;
 }
 
-.contact-form ul li.half:first-child {
-  margin-left: 0;
+.contact-form .top-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.7rem;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
   width: 100%;
   border: 0;
-  background: #115173;
+  background: #b8c8d1;
   height: 50px;
   font-size: 16px;
   color: #fff;
   padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-animation: bounceInRight 0.5s 0.5s backwards;
+          animation: bounceInRight 0.5s 0.5s backwards;
 }
 
 .contact-form textarea {
   width: 100%;
   border: 0;
-  background: #115173;
+  background: #b8c8d1;
   height: 50px;
   font-size: 1rem;
   color: #fff;
@@ -59,19 +41,13 @@
   min-height: 150px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-animation: bounceInLeft 0.5s 0.5s backwards;
+          animation: bounceInLeft 0.5s 0.5s backwards;
 }
 
-.contact-form .flat-button {
-  color: #ffd700;
-  background: 0 0;
-  font-size: 0.9rem;
-  letter-spacing: 3px;
-  text-decoration: none;
-  padding: 8px 10px;
-  border: 1px solid #ffd700;
+.ctn-button {
+  -webkit-animation: fadeIn 1s 1.8s backwards;
+          animation: fadeIn 1s 1.8s backwards;
   float: right;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
 }
 /*# sourceMappingURL=index.css.map */
