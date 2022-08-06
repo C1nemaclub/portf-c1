@@ -1,4 +1,16 @@
 .home-page {
+  &::after {
+    content: "";
+    background: #0d698b;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 50%;
+    z-index: -1;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
   .text-zone {
     position: absolute;
     left: 20%;

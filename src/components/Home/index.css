@@ -1,3 +1,18 @@
+.home-page::after {
+  content: "";
+  background: #0d698b;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 25%;
+  height: 50%;
+  z-index: -1;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
 .home-page .text-zone {
   position: absolute;
   left: 20%;

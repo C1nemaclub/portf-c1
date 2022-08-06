@@ -14,9 +14,30 @@ import GlitchText from "react-glitch-effect/core/GlitchText"
 import Typewritter from "typewriter-effect"
 
 export default function About() {
+  const [translate, setTranslate] = useState(true)
+
+  function translateText() {
+    setTranslate((prev) => !prev)
+  }
+
   return (
     <>
       <section className="container about-page">
+        {translate ? (
+          <h4 className="japanese-container">
+            <button onClick={translateText}>Translate</button>
+            <div className="text">門前の小僧習わぬ経を読む</div>
+          </h4>
+        ) : (
+          <h4 className="japanese-container">
+            <button onClick={translateText} className="translate-button">
+              Translate
+            </button>
+            <div className="text text-english">
+              A monk outside the gates can read sutras never studied
+            </div>
+          </h4>
+        )}
         <div className="text-zone">
           <GlitchText component="h1" color1={"green"} color2={"red"}>
             <Typewritter
@@ -25,36 +46,44 @@ export default function About() {
               }}
             />
           </GlitchText>
-          <p className="text">
-            Im Santiago Velasquez -- a Frontend web developer based in
-            Medellin-Colombia with a big passion for programming and learning
-            new exciting things.
-          </p>
+          <GlitchText
+            component="p"
+            color1={"green"}
+            color2={"red"}
+            onHover={true}
+          >
+            <p className="text">
+              Im Santiago Velasquez -- a Frontend web developer based in
+              Medellin-Colombia with a big passion for programming and learning
+              new exciting things.
+            </p>
 
-          <p className="text">
-            I have worked in customer service for a few months where i was able
-            to improve my english and communicate, I also worked as a boiler
-            techinician at Zenu for half a year which is where i first made my
-            first phone application and decided to go further and learn web
-            development
-          </p>
-          <div className="skills">
-            <h5 className="subtitle">Skills</h5>
-            <div className="flex-container">
-              <div className="left text">
-                <p>Javascript</p>
-                <p>Html</p>
-                <p>Css</p>
-                <p>React</p>
-              </div>
-              <div className="right text">
-                <p>Express</p>
-                <p>Mongodb</p>
-                <p>Git</p>
-                <p>Redux</p>
+            <p className="text">
+              I have worked in customer service for a few months where i was
+              able to improve my english and communicate, I also worked as a
+              boiler techinician at Zenu for half a year which is where i first
+              made my first phone application and decided to go further and
+              learn web development
+            </p>
+
+            <div className="skills">
+              <h5 className="subtitle">Skills</h5>
+              <div className="flex-container">
+                <div className="left text">
+                  <p>Javascript</p>
+                  <p>Html</p>
+                  <p>Css</p>
+                  <p>React</p>
+                </div>
+                <div className="right text">
+                  <p>Express</p>
+                  <p>Mongodb</p>
+                  <p>Git</p>
+                  <p>Redux</p>
+                </div>
               </div>
             </div>
-          </div>
+          </GlitchText>
         </div>
         <div className="stage-cube-cont">
           <div className="scene">

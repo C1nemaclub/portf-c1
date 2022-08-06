@@ -10,6 +10,60 @@
   .skills {
     animation: bounceInRight 0.7s 0.3s backwards;
   }
+  &::after {
+    content: "";
+    background: #0d698b;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 50%;
+    z-index: -2;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+
+  .japanese-container {
+    position: absolute;
+    top: 58%;
+    left: 25%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    transform: rotate(90deg);
+    .text {
+      animation: bounceInRight 0.7s 0.6s backwards;
+      background: var(--accent-color);
+      color: black;
+      font-weight: 200;
+      font-size: 2rem;
+      padding: 0rem 1rem;
+      cursor: pointer;
+      max-width: 500px;
+      //box-shadow: 5px 5px 40px 5px var(--text-color);
+    }
+    .text-english {
+      font-size: 1.5rem;
+    }
+    button {
+      animation: fadeIn 0.7s 0.6s backwards;
+      position: absolute;
+      top: 145%;
+      left: 20%;
+      font-size: 1.2rem;
+      background: none;
+      color: white;
+      letter-spacing: 3px;
+      cursor: pointer;
+      border: 0;
+      transform: translate(-50%, -50%);
+      animation: flash 2s infinite;
+    }
+    .translate-button {
+      border: 4px dotted var(--accent-color);
+      padding: 0rem 1rem;
+      animation: none;
+    }
+  }
 }
 
 @media screen and (max-width: 1050px) {

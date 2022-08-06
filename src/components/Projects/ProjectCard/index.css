@@ -104,6 +104,19 @@ img {
           transform: translateZ(100px);
 }
 
+.face-front::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100%;
+  height: 12%;
+  background: var(--accent-color);
+  z-index: 0;
+}
+
 .face-front img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -125,6 +138,9 @@ img {
   font-weight: bold;
   position: absolute;
   top: 0;
+  color: black;
+  font-size: 0.8rem;
+  z-index: 1;
 }
 
 .face-right {

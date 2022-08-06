@@ -11,6 +11,21 @@
   max-width: 500px;
 }
 
+.contact-page::after {
+  content: "";
+  background: #0d698b;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 25%;
+  height: 50%;
+  z-index: -2;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
 .map {
   -ms-flex-item-align: end;
       align-self: flex-end;

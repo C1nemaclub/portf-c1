@@ -19,6 +19,73 @@
           animation: bounceInRight 0.7s 0.3s backwards;
 }
 
+.about-page::after {
+  content: "";
+  background: #0d698b;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 25%;
+  height: 50%;
+  z-index: -2;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.about-page .japanese-container {
+  position: absolute;
+  top: 58%;
+  left: 25%;
+  z-index: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.about-page .japanese-container .text {
+  -webkit-animation: bounceInRight 0.7s 0.6s backwards;
+          animation: bounceInRight 0.7s 0.6s backwards;
+  background: var(--accent-color);
+  color: black;
+  font-weight: 200;
+  font-size: 2rem;
+  padding: 0rem 1rem;
+  cursor: pointer;
+  max-width: 500px;
+}
+
+.about-page .japanese-container .text-english {
+  font-size: 1.5rem;
+}
+
+.about-page .japanese-container button {
+  -webkit-animation: fadeIn 0.7s 0.6s backwards;
+          animation: fadeIn 0.7s 0.6s backwards;
+  position: absolute;
+  top: 145%;
+  left: 20%;
+  font-size: 1.2rem;
+  background: none;
+  color: white;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: flash 2s infinite;
+          animation: flash 2s infinite;
+}
+
+.about-page .japanese-container .translate-button {
+  border: 4px dotted var(--accent-color);
+  padding: 0rem 1rem;
+  -webkit-animation: none;
+          animation: none;
+}
+
 @media screen and (max-width: 1050px) {
   .about-page {
     -webkit-box-orient: vertical;

@@ -1,23 +1,35 @@
 :root {
-  --title-color: #ffd700;
+  --title-color: #60e3d5;
   --subtitle-color: #fff;
   --text-color: #fff;
-  --background-color: indigo;
+  --background-color: #111a37;
   --form-background-color: #ccc;
   --form-text-color: #363636;
-  --sidebar-color: rgb(68, 65, 71);
-  --sidebar-phone-color: rgb(68, 65, 71);
+  --sidebar-color: #e31577;
+  --sidebar-text-color: #fff;
   --hero-color: #fff;
-  --nav-selector-color: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(60, 9, 121, 1) 12%,
-    rgba(175, 0, 255, 0.3) 100%
-  );
+  --nav-selector-color: #0d698b;
   --nav-hover-color: white;
   --nav-text-hover-color: black;
   --sidebar-logo-color: #ffd700;
+  --accent-color: #60e3d5;
 }
+// :root {
+//     --title-color: #ffd700;
+//     --subtitle-color: #fff;
+//     --text-color: #fff;
+//     --background-color: indigo;
+//     --form-background-color: #ccc;
+//     --form-text-color: #363636;
+//     --sidebar-color: rgb(68, 65, 71);
+//     --sidebar-phone-color: rgb(68, 65, 71);
+//     --hero-color: #fff;
+//     --nav-selector-color: #0d698b;
+//     --nav-hover-color: white;
+//     --nav-text-hover-color: black;
+//     --sidebar-logo-color: #ffd700;
+//     --accent-color: #ffd700;
+//   }
 
 section {
   width: 85%;
