@@ -135,4 +135,10 @@ iframe {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 812px) {
+  .contact-page::after {
+    display: none;
+  }
+}
 /*# sourceMappingURL=index.css.map */

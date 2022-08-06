@@ -11,7 +11,7 @@ export default function ProjectCard(props) {
       <div className="projectCube" onClick={props.handleClick}>
         <div className="face face-front">
           <img src={props.image} alt="website" />
-          <h3>{props.name}</h3>
+          <h3 className="front-face-name">{props.name}</h3>
         </div>
         <div className="face face-right">
           <div className="content">

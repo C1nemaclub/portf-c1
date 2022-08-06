@@ -9,6 +9,7 @@ import Html from "./assets/tags/html.png"
 import Css from "./assets/tags/css.png"
 import Js from "./assets/tags/js.png"
 import Express from "./assets/tags/express.png"
+import Mongo from "./assets/tags/mongo.png"
 import Node from "./assets/tags/node.png"
 
 export default [
@@ -24,7 +25,7 @@ export default [
     name: "Social Media Website",
     image: Journey,
     link: "https://journeyappv1.herokuapp.com/",
-    tech: [React, Js, Css, Html],
+    tech: [React, Js, Css, Html, Mongo],
   },
   {
     id: 3,
@@ -52,6 +53,6 @@ export default [
     name: "Book Library Website",
     image: Mybrary,
     link: "https://mybrary-c1.herokuapp.com/",
-    tech: [Express, Js, Css, Html],
+    tech: [Express, Js, Css, Html, Mongo],
   },
 ]

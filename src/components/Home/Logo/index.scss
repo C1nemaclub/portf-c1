@@ -25,13 +25,43 @@
     left: 0;
     margin: auto;
     width: 100%;
-    opacity: 1;
+    opacity: 0;
     transform: rotateZ(30deg);
     z-index: 1;
+    animation: spawnLogo 1s 3s linear forwards;
+    transition: 1s linear;
+    will-change: opacity;
   }
 }
 
 .svg-container {
   stroke: #ffd700;
   stroke-width: 10px;
+}
+
+.big-logo-svg g {
+  stroke-dasharray: 125922px;
+  stroke-dashoffset: 125922px;
+  transition: 1s linear;
+  animation: snake 3s 2s linear forwards;
+  stroke-width: 40px;
+}
+
+@keyframes spawnLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes snake {
+  0% {
+    stroke-dashoffset: 125922px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+    fill: white;
+  }
 }

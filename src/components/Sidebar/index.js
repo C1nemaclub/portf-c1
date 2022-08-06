@@ -12,22 +12,25 @@ import {
   FaClipboard,
 } from "react-icons/fa"
 import { FiX, FiMenu } from "react-icons/fi"
-
+import { useLocation } from "react-router-dom"
 import React, { useState, useEffect } from "react"
 
 export default function Sidebar() {
-  const [menuState, setMenuState] = useState(true)
-
-  const menuStyle = {
-    left: menuState ? "0%" : "-60%",
-  }
+  const [menuState, setMenuState] = useState(false)
+  const { pathname } = useLocation()
 
   useEffect(() => {
-    setMenuState(false)
-    if (window.innerWidth >= 768) {
+    if (window.screen.width <= 812) {
+      setMenuState(true) // Close the navigation panel
+    }
+  }, [pathname])
+
+  useEffect(() => {
+    if (window.screen.width <= 812) {
       setMenuState(true)
     }
   }, [])
+
   function menuToggle() {
     setMenuState((prev) => !prev)
   }
@@ -35,11 +38,11 @@ export default function Sidebar() {
   return (
     <>
       {menuState ? (
-        <FiX className="menu-icon menu-close" onClick={menuToggle} />
+        <FiMenu className="menu-icon menu-close" onClick={menuToggle} />
       ) : (
-        <FiMenu className="menu-icon menu-open" onClick={menuToggle} />
+        <FiX className="menu-icon menu-open" onClick={menuToggle} />
       )}
-      <div className="nav-bar" style={menuStyle}>
+      <div className="nav-bar" style={{ left: menuState ? "-60%" : "0%" }}>
         <Link className="logo" to="/">
           <img src={LogoS} alt="logo" />
           <h3 className="sub-logo">Santiago</h3>

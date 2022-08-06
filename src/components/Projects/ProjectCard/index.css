@@ -102,6 +102,7 @@ img {
 .face-front {
   -webkit-transform: translateZ(100px);
           transform: translateZ(100px);
+  background: #111a37;
 }
 
 .face-front::after {
@@ -124,7 +125,7 @@ img {
   width: 100%;
 }
 
-.face-front h3 {
+.face-front .front-face-name {
   padding: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,17 +136,18 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
   top: 0;
+  color: var(--sidebar-text-color);
   color: black;
   font-size: 0.8rem;
   z-index: 1;
 }
 
 .face-right {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a0a3ad), to(#f5f7ff));
-  background: linear-gradient(#a0a3ad, #f5f7ff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0c1842), to(#e417a6));
+  background: linear-gradient(#0c1842, #e417a6);
   background-size: cover;
   background-position: center center;
   -webkit-transform: rotateY(90deg) translateZ(100px);

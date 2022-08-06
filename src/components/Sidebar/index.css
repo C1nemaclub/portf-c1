@@ -4,7 +4,7 @@
   min-width: 150px;
   height: 100%;
   position: fixed;
-  top: 0;
+  top: 0%;
   left: 0%;
   z-index: 3;
   min-height: 500px;
@@ -125,16 +125,20 @@ ul {
 ul li a {
   padding: 7px 0;
   display: block;
-  font-size: 1.5rem;
+  font-size: 3rem;
   line-height: 15px;
 }
 
 ul li a svg {
   color: var(--sidebar-text-color);
+  border-radius: 50%;
+  padding: 0.4rem;
 }
 
 ul li a:hover svg {
-  color: yellow;
+  -webkit-box-shadow: inset 10px 10px 20px #5a5a5a, inset -10px -10px 20px var(--accent-color);
+          box-shadow: inset 10px 10px 20px #5a5a5a, inset -10px -10px 20px var(--accent-color);
+  color: var(--accent-color);
 }
 
 .this {
@@ -161,7 +165,7 @@ ul li a:hover svg {
 @media screen and (max-width: 812px) {
   .nav-bar {
     min-width: 200px;
-    left: -30%;
+    left: -60%;
   }
   .menu-icon {
     display: block;

@@ -14,6 +14,7 @@ export default function Logo() {
       <img ref={solidLogoRef} className="solid-logo" src={LogoS} alt="S" />
 
       <svg
+        className="big-logo-svg"
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
         width="559.000000pt"

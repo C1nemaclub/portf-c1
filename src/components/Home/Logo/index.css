@@ -29,14 +29,67 @@
   left: 0;
   margin: auto;
   width: 100%;
-  opacity: 1;
+  opacity: 0;
   -webkit-transform: rotateZ(30deg);
           transform: rotateZ(30deg);
   z-index: 1;
+  -webkit-animation: spawnLogo 1s 3s linear forwards;
+          animation: spawnLogo 1s 3s linear forwards;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  will-change: opacity;
 }
 
 .svg-container {
   stroke: #ffd700;
   stroke-width: 10px;
+}
+
+.big-logo-svg g {
+  stroke-dasharray: 125922px;
+  stroke-dashoffset: 125922px;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  -webkit-animation: snake 3s 2s linear forwards;
+          animation: snake 3s 2s linear forwards;
+  stroke-width: 40px;
+}
+
+@-webkit-keyframes spawnLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spawnLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes snake {
+  0% {
+    stroke-dashoffset: 125922px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+    fill: white;
+  }
+}
+
+@keyframes snake {
+  0% {
+    stroke-dashoffset: 125922px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+    fill: white;
+  }
 }
 /*# sourceMappingURL=index.css.map */

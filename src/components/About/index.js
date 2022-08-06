@@ -26,16 +26,14 @@ export default function About() {
         {translate ? (
           <h4 className="japanese-container">
             <button onClick={translateText}>Translate</button>
-            <div className="text">門前の小僧習わぬ経を読む</div>
+            <div className="text">遅すぎることはない！</div>
           </h4>
         ) : (
           <h4 className="japanese-container">
             <button onClick={translateText} className="translate-button">
               Translate
             </button>
-            <div className="text text-english">
-              A monk outside the gates can read sutras never studied
-            </div>
+            <div className="text text-english">Never too Late!</div>
           </h4>
         )}
         <div className="text-zone">

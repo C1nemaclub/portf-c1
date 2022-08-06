@@ -18,3 +18,9 @@
   width: 100%;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 812px) {
+  .grid-container {
+    padding: 0.4rem 0rem;
+  }
+}

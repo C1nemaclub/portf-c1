@@ -105,4 +105,10 @@ h2 {
   -webkit-animation: fadeIn 0.3s 1.7s backwards;
           animation: fadeIn 0.3s 1.7s backwards;
 }
+
+@media screen and (max-width: 812px) {
+  .home-page::after {
+    display: none;
+  }
+}
 /*# sourceMappingURL=index.css.map */

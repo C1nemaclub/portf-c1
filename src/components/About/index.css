@@ -8,6 +8,10 @@
           justify-content: space-between;
 }
 
+.about-page .text-zone {
+  min-width: 300px;
+}
+
 .about-page .subtitle {
   color: var(--subtitle-color);
   font-size: 2.2rem;
@@ -55,10 +59,13 @@
   padding: 0rem 1rem;
   cursor: pointer;
   max-width: 500px;
+  min-width: 356px;
 }
 
 .about-page .japanese-container .text-english {
   font-size: 1.5rem;
+  letter-spacing: 4px;
+  text-align: center;
 }
 
 .about-page .japanese-container button {
@@ -86,6 +93,26 @@
           animation: none;
 }
 
+@media screen and (max-width: 1890px) {
+  .about-page .japanese-container {
+    top: 70%;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .about-page .japanese-container {
+    top: 40%;
+    left: 38%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .about-page .japanese-container {
+    top: 40%;
+    left: 32%;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .about-page {
     -webkit-box-orient: vertical;
@@ -95,6 +122,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .about-page .japanese-container {
+    right: -50%;
+    top: 80%;
   }
 }
 
@@ -340,5 +371,15 @@
 
 .skills .flex-container p:hover {
   color: #ffd700;
+}
+
+@media screen and (max-width: 812px) {
+  .about-page::after {
+    display: none;
+  }
+  .scene {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 /*# sourceMappingURL=index.css.map */
