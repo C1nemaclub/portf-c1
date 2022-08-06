@@ -8,7 +8,7 @@
   bottom: 0;
   left: auto;
   margin: auto;
-  opacity: 0;
+  opacity: 1;
   -webkit-animation: bounceInRight 1s 1s backwards;
           animation: bounceInRight 1s 1s backwards;
 }
@@ -29,7 +29,7 @@
   left: 0;
   margin: auto;
   width: 100%;
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: rotateZ(30deg);
           transform: rotateZ(30deg);
   z-index: 1;
