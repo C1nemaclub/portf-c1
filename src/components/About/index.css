@@ -3,13 +3,47 @@
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-page .subtitle {
+  color: var(--subtitle-color);
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.about-page .skills {
+  -webkit-animation: bounceInRight 0.7s 0.3s backwards;
+          animation: bounceInRight 0.7s 0.3s backwards;
+}
+
+@media screen and (max-width: 1050px) {
+  .about-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .stage-cube-cont {
-  overflow: hidden;
-  margin-left: 10rem;
-  -webkit-animation: bounceInRight 0.5s 0.5s backwards;
-          animation: bounceInRight 0.5s 0.5s backwards;
+  -webkit-animation: bounceInDown 0.7s 0.6s backwards;
+          animation: bounceInDown 0.7s 0.6s backwards;
+  margin-right: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .scene {
@@ -217,5 +251,27 @@
     -webkit-transform: rotateY(270deg) translateZ(130px);
             transform: rotateY(270deg) translateZ(130px);
   }
+}
+
+.skills h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.skills .flex-container {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.skills .flex-container p {
+  font-size: 1.1rem;
+}
+
+.skills .flex-container p:hover {
+  color: #ffd700;
 }
 /*# sourceMappingURL=index.css.map */

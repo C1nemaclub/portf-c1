@@ -37,7 +37,12 @@ export default function Home() {
     <>
       <div className="container home-page">
         <div className="text-zone">
-          <GlitchText component="h1" color1={"green"} color2={"red"}>
+          <GlitchText
+            component="h1"
+            color1={"green"}
+            color2={"red"}
+            onHover={true}
+          >
             <Typewritter
               options={{
                 delay: 50,
@@ -48,7 +53,7 @@ export default function Home() {
             />
           </GlitchText>
           <h2>Frontend Developer</h2>
-          <Link to="/contact" className="flat-button">
+          <Link to="/contact" className="flat-button home-button">
             CONTACT ME
           </Link>
         </div>

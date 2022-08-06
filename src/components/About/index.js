@@ -16,7 +16,7 @@ import Typewritter from "typewriter-effect"
 export default function About() {
   return (
     <>
-      <div className="container about-page">
+      <section className="container about-page">
         <div className="text-zone">
           <GlitchText component="h1" color1={"green"} color2={"red"}>
             <Typewritter
@@ -25,33 +25,50 @@ export default function About() {
               }}
             />
           </GlitchText>
-          <p>
+          <p className="text">
             Im Santiago Velasquez -- a Frontend web developer based in
             Medellin-Colombia with a big passion for programming and learning
             new exciting things.
           </p>
 
-          <p>
+          <p className="text">
             I have worked in customer service for a few months where i was able
             to improve my english and communicate, I also worked as a boiler
             techinician at Zenu for half a year which is where i first made my
             first phone application and decided to go further and learn web
             development
           </p>
-        </div>
-        <div className="stage-cube-cont">
-          <div class="scene">
-            <div class="cube">
-              <div class="cube__face cube__face--front"></div>
-              <div class="cube__face cube__face--back"></div>
-              <div class="cube__face cube__face--right"></div>
-              <div class="cube__face cube__face--left"></div>
-              <div class="cube__face cube__face--top"></div>
-              <div class="cube__face cube__face--bottom"></div>
+          <div className="skills">
+            <h5 className="subtitle">Skills</h5>
+            <div className="flex-container">
+              <div className="left text">
+                <p>Javascript</p>
+                <p>Html</p>
+                <p>Css</p>
+                <p>React</p>
+              </div>
+              <div className="right text">
+                <p>Express</p>
+                <p>Mongodb</p>
+                <p>Git</p>
+                <p>Redux</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div className="stage-cube-cont">
+          <div className="scene">
+            <div className="cube">
+              <div className="cube__face cube__face--front"></div>
+              <div className="cube__face cube__face--back"></div>
+              <div className="cube__face cube__face--right"></div>
+              <div className="cube__face cube__face--left"></div>
+              <div className="cube__face cube__face--top"></div>
+              <div className="cube__face cube__face--bottom"></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <Loader type="ball-clip-rotate-multiple" />
     </>
   )

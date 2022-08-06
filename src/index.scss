@@ -10,14 +10,17 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  //border: 1px solid limegreen;
 }
 
 body {
   color: rgb(255, 255, 255);
-  background: #6440cf;
+  background: var(--background-color);
   //overflow: hidden;
   display: block;
-  // min-height: 100vh;
-  // height: 100%;
+  min-height: 100vh;
+  height: 100%;
   // width: 100%;
 }
+
+

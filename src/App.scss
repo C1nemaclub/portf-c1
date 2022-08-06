@@ -3,10 +3,6 @@ $primary-color: #ffd700;
 @import "animate.css";
 
 @import "loaders.css/src/animations/ball-clip-rotate-multiple.scss";
-input,
-textarea {
-  font-family: "Helvetica Neue";
-}
 
 .loader-active {
   display: block;

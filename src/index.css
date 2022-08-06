@@ -14,7 +14,9 @@ html {
 
 body {
   color: white;
-  background: #6440cf;
+  background: var(--background-color);
   display: block;
+  min-height: 100vh;
+  height: 100%;
 }
 /*# sourceMappingURL=index.css.map */

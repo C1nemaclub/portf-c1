@@ -1,17 +1,21 @@
 .nav-bar {
-  background-color: #363636;
+  background-color: var(--sidebar-color);
   width: 10%;
   min-width: 150px;
   height: 100%;
   position: fixed;
   top: 0;
+  left: 0%;
   z-index: 3;
   min-height: 500px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-bar .logo {
   display: block;
   padding: 8px 0;
+  margin-top: 3rem;
   text-decoration: none;
 }
 
@@ -24,7 +28,7 @@
 
 .nav-bar .logo .sub-logo {
   display: block;
-  color: #000000;
+  color: var(--title-color);
   text-decoration: none;
   margin: 8px auto;
   text-align: center;
@@ -32,74 +36,62 @@
 }
 
 nav {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   text-align: center;
   position: absolute;
-  height: 210px;
+  gap: 0.5rem;
   top: 50%;
   margin-top: -120px;
   width: 100%;
 }
 
 nav a {
-  font-size: 2.2rem;
-  color: rgba(0, 0, 0, 0.8);
-  display: block;
-  line-height: 51px;
-  position: relative;
+  padding: 0rem 1rem;
   text-decoration: none;
-}
-
-nav a i {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  color: var(--text-color);
+  width: 100%;
+  font-size: 1rem;
 }
 
 nav a:hover {
-  color: #000000;
+  background: var(--nav-hover-color);
+  color: var(--nav-text-hover-color);
 }
 
-nav a:hover svg {
-  opacity: 0;
+nav a .link-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
 }
 
-nav a:hover::after {
-  opacity: 1;
+nav .active {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(163, 82, 255, 0.8)), to(rgba(121, 78, 223, 0.2)));
+  background: linear-gradient(to right, rgba(163, 82, 255, 0.8), rgba(121, 78, 223, 0.2));
+  background: var(--nav-selector-color);
 }
 
-nav a::after {
-  content: "";
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  font-family: "Helvetica";
-}
-
-nav a:first-child::after {
-  content: "HOME";
-}
-
-nav a:nth-child(2)::after {
-  content: "ABOUT";
-}
-
-nav a:nth-child(3)::after {
-  content: "PROJECTS";
-}
-
-nav a:last-child::after {
-  content: "CONTACT";
+nav li {
+  list-style: none;
 }
 
 nav a.active svg {
-  color: #ffd700;
+  color: var(--title-color);
 }
 
 ul {
@@ -121,10 +113,41 @@ ul li a {
 }
 
 ul li a svg {
-  color: #4d4d4e;
+  color: white;
 }
 
 ul li a:hover svg {
   color: yellow;
+}
+
+.this {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.menu-icon {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 4;
+  display: none;
+}
+
+@media screen and (max-width: 812px) {
+  .nav-bar {
+    min-width: 200px;
+    left: -30%;
+  }
+  .menu-icon {
+    display: block;
+  }
 }
 /*# sourceMappingURL=index.css.map */

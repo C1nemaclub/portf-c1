@@ -68,8 +68,16 @@ img {
           perspective: 400px;
   grid-column: span 1;
   margin-bottom: 8rem;
-  -webkit-animation: bounceInLeft 0.5s 0.5s backwards;
-          animation: bounceInLeft 0.5s 0.5s backwards;
+}
+
+.projectScene:nth-child(even) {
+  -webkit-animation: bounceInUp 0.5s 0.5s backwards;
+          animation: bounceInUp 0.5s 0.5s backwards;
+}
+
+.projectScene:nth-child(odd) {
+  -webkit-animation: bounceInDown 0.5s 0.5s backwards;
+          animation: bounceInDown 0.5s 0.5s backwards;
 }
 
 .projectCube {
@@ -99,8 +107,8 @@ img {
 .face-front img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .face-front h3 {
@@ -120,8 +128,8 @@ img {
 }
 
 .face-right {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.5)), to(rgba(4, 9, 30, 0.5)));
-  background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5));
+  background: -webkit-gradient(linear, left top, left bottom, from(#a0a3ad), to(#f5f7ff));
+  background: linear-gradient(#a0a3ad, #f5f7ff);
   background-size: cover;
   background-position: center center;
   -webkit-transform: rotateY(90deg) translateZ(100px);

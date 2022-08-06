@@ -29,7 +29,7 @@ export default function Projects() {
 
   return (
     <>
-      <div className="container projects-page">
+      <section className="container projects-page">
         <div className="text-zone">
           <GlitchText component="h1" color1={"green"} color2={"red"}>
             <Typewritter
@@ -40,7 +40,7 @@ export default function Projects() {
           </GlitchText>
         </div>
         <div className="grid-container">{projectElements}</div>
-      </div>
+      </section>
       <Loader type="ball-clip-rotate-multiple" />
     </>
   )

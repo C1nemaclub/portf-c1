@@ -9,6 +9,8 @@
   left: auto;
   margin: auto;
   opacity: 0;
+  -webkit-animation: bounceInRight 1s 1s backwards;
+          animation: bounceInRight 1s 1s backwards;
 }
 
 .logo-container svg {

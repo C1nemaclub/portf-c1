@@ -9,7 +9,7 @@
 }
 
 .home-page h1 {
-  color: #fff;
+  color: var(--hero-color);
   font-size: 3.5rem;
   font-weight: 400;
   max-width: 450px;
@@ -24,6 +24,8 @@
   margin-top: -40px;
   left: 0;
   opacity: 0.6;
+  -webkit-animation: fadeIn 1s 1.7s backwards;
+          animation: fadeIn 1s 1.7s backwards;
 }
 
 .home-page h1::after {
@@ -71,8 +73,6 @@ h2 {
   -webkit-box-shadow: -5px 5px 1px 0px lightyellow;
           box-shadow: -5px 5px 1px 0px lightyellow;
   float: left;
-  -webkit-animation: fadeIn 1s 1.8s backwards;
-          animation: fadeIn 1s 1.8s backwards;
   white-space: nowrap;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -84,5 +84,10 @@ h2 {
   color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.home-button {
+  -webkit-animation: fadeIn 0.3s 1.7s backwards;
+          animation: fadeIn 0.3s 1.7s backwards;
 }
 /*# sourceMappingURL=index.css.map */

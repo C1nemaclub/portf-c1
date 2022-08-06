@@ -38,7 +38,7 @@ export default function Contact() {
   }
   return (
     <>
-      <div className="container contact-page">
+      <section className="container contact-page">
         <div className="text-zone">
           {/* <h1>
             <AnimatedLetters
@@ -54,7 +54,7 @@ export default function Contact() {
               }}
             />
           </GlitchText>
-          <p>
+          <p className="text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
             dolorem animi veniam inventore quisquam eveniet.
           </p>
@@ -88,7 +88,20 @@ export default function Contact() {
             </form>
           </div>
         </div>
-      </div>
+        <div class="mapouter map">
+          <div class="gmap_canvas">
+            <iframe
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=medellin&t=&z=11&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+            <a href="https://www.whatismyip-address.com/divi-discount/"></a>
+          </div>
+        </div>
+      </section>
       <Loader type="ball-clip-rotate-multiple" />
     </>
   )

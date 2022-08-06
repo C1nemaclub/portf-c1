@@ -1,7 +1,50 @@
+.contact-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-page .text-zone {
+  max-width: 500px;
+}
+
+.map {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 3rem;
+  width: 100%;
+  height: 500px;
+  max-width: 450px;
+  -webkit-animation: bounceInRight 0.3s 1s backwards;
+          animation: bounceInRight 0.3s 1s backwards;
+  position: relative;
+}
+
+#gmap_canvas {
+  height: 400px;
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+iframe {
+  -webkit-animation: bounceInRight 0.3s 1s backwards;
+          animation: bounceInRight 0.3s 1s backwards;
+  border-radius: 0.4rem;
+}
+
 .contact-form {
   width: 100%;
-  margin-top: 6rem;
+  margin-top: 4rem;
   position: relative;
+  max-width: 500px;
 }
 
 .contact-form .input-group {
@@ -19,10 +62,10 @@
 .contact-form input[type="email"] {
   width: 100%;
   border: 0;
-  background: #b8c8d1;
+  background: var(--form-background-color);
   height: 50px;
   font-size: 16px;
-  color: #fff;
+  color: var(--form-text-color);
   padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -33,21 +76,48 @@
 .contact-form textarea {
   width: 100%;
   border: 0;
-  background: #b8c8d1;
+  background: var(--form-background-color);
   height: 50px;
   font-size: 1rem;
-  color: #fff;
+  color: var(--form-text-color);
   padding: 20px;
   min-height: 150px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-animation: bounceInLeft 0.5s 0.5s backwards;
-          animation: bounceInLeft 0.5s 0.5s backwards;
+  -webkit-animation: bounceInLeft 0.5s 1s backwards;
+          animation: bounceInLeft 0.5s 1s backwards;
 }
 
 .ctn-button {
-  -webkit-animation: fadeIn 1s 1.8s backwards;
-          animation: fadeIn 1s 1.8s backwards;
+  -webkit-animation: bounceInUp 0.5s 1s backwards;
+          animation: bounceInUp 0.5s 1s backwards;
   float: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-page {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5rem;
+  }
+  .map {
+    margin-right: 0;
+    max-width: 600px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #gmap_canvas {
+    width: 600px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

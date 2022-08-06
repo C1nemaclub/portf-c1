@@ -1,15 +1,15 @@
-import Pubg from "./assets/project/battletracker.png"
+import Pubg from "./assets/project/battletracker2.png"
 import Journey from "./assets/project/journey.png"
 import Nimbus from "./assets/project/nimbus.png"
 import Quizzical from "./assets/project/quizzical.png"
-import Space from "./assets/project/space.png"
+import Space from "./assets/project/space2.png"
 import Mybrary from "./assets/project/mybrary.png"
-import Node from "./assets/tags/node.png"
 import React from "./assets/tags/react.png"
 import Html from "./assets/tags/html.png"
 import Css from "./assets/tags/css.png"
 import Js from "./assets/tags/js.png"
 import Express from "./assets/tags/express.png"
+import Node from "./assets/tags/node.png"
 
 export default [
   {
