@@ -94,7 +94,7 @@ export default function Sidebar() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/C1nemaclub"
+              href="https://www.linkedin.com/in/santiago-velasquez-426719243/"
             >
               <FaLinkedin />
             </a>

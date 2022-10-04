@@ -72,8 +72,10 @@ export default function About() {
                   <p>Html</p>
                   <p>Css</p>
                   <p>React</p>
+                  <p>Python</p>
                 </div>
                 <div className="right text">
+                  <p>Node</p>
                   <p>Express</p>
                   <p>Mongodb</p>
                   <p>Git</p>

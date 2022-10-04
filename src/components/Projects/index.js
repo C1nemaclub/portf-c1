@@ -22,6 +22,7 @@ export default function Projects() {
         link={item.link}
         image={item.image}
         tags={item.tech}
+        type={item.type}
         handleClick={(e) => handleClick(item.link)}
       />
     )

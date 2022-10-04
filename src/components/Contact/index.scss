@@ -18,6 +18,9 @@
   }
 }
 
+.contact-me-email {
+  color: white;
+}
 .map {
   align-self: flex-end;
   margin-right: 3rem;
@@ -48,6 +51,7 @@ iframe {
   margin-top: 4rem;
   position: relative;
   max-width: 500px;
+
   .input-group {
     margin-bottom: 0.7rem;
   }
@@ -93,6 +97,7 @@ iframe {
     flex-direction: column;
     gap: 5rem;
   }
+
   .map {
     margin-right: 0;
     max-width: 600px;

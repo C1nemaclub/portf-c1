@@ -7,13 +7,8 @@ import Typewritter from "typewriter-effect"
 import GlitchText from "react-glitch-effect/core/GlitchText"
 
 export default function Contact() {
-  const [letterClass, setLetterClass] = useState("text-animate")
   const refForm = useRef()
 
-  const contactArray = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"]
-  setTimeout(() => {
-    setLetterClass("text-animate-hover")
-  }, 3000)
   function sendEmail(e) {
     e.preventDefault()
 
@@ -40,13 +35,6 @@ export default function Contact() {
     <>
       <section className="container contact-page">
         <div className="text-zone">
-          {/* <h1>
-            <AnimatedLetters
-              strArray={contactArray}
-              idx={15}
-              letterClass={letterClass}
-            />
-          </h1> */}
           <GlitchText component="h1" color1={"green"} color2={"red"}>
             <Typewritter
               onInit={(typewritter) => {
@@ -55,8 +43,14 @@ export default function Contact() {
             />
           </GlitchText>
           <p className="text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            dolorem animi veniam inventore quisquam eveniet.
+            Email me any questions or inquiries right below! If you preffer you
+            can send me a direct message throught{" "}
+            <a
+              href="mailto:santiagov801@gmail.com"
+              className="contact-me-email"
+            >
+              santiagov801@gmail.com
+            </a>
           </p>
 
           <div className="contact-form">
