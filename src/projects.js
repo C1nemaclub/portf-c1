@@ -14,6 +14,7 @@ import Node from "./assets/tags/node.png"
 import CardFlip from "./assets/project/cardflip.png"
 import Countries from "./assets/project/countries.png"
 import soundstore from "./assets/project/soundstore.png"
+import Blog from "./assets/project/blog.png"
 
 export default [
   {
@@ -34,6 +35,14 @@ export default [
   },
   {
     id: 3,
+    name: "Cinema Codes",
+    type: "Markdown Personal Blog",
+    image: Blog,
+    link: "https://markdown-blogg.herokuapp.com/",
+    tech: [Express, Js, Css, Html],
+  },
+  {
+    id: 4,
     name: "Nimbus",
     type: "Weather Api Website",
     image: Nimbus,
@@ -41,7 +50,7 @@ export default [
     tech: [Express, Js, Css, Html],
   },
   {
-    id: 4,
+    id: 5,
     name: "Quizzical",
     type: "Api Quiz Website",
     image: Quizzical,
@@ -49,7 +58,7 @@ export default [
     tech: [React, Html, Css],
   },
   {
-    id: 5,
+    id: 6,
     name: "Space Tourism",
     type: "Tourism Website",
     image: Space,
@@ -57,7 +66,7 @@ export default [
     tech: [Js, Html, Css],
   },
   {
-    id: 6,
+    id: 7,
     name: "Mybrary",
     type: "Book Store Website",
     image: Mybrary,
@@ -65,7 +74,7 @@ export default [
     tech: [Express, Js, Css, Html, Mongo],
   },
   {
-    id: 7,
+    id: 8,
     name: "PUBG Battletracker",
     type: "3rd Party Api Website",
     image: Pubg,
@@ -73,19 +82,11 @@ export default [
     tech: [Express, Js, Css, Html],
   },
   {
-    id: 8,
+    id: 9,
     name: "Country Finder",
     type: "Country API Website",
     image: Countries,
     link: "https://c1nemaclub.github.io/countries-api/",
-    tech: [React, Js, Css, Html],
-  },
-  {
-    id: 9,
-    name: "Card-Flip",
-    type: "Game",
-    image: CardFlip,
-    link: "https://c1nemaclub.github.io/cardflip-game/",
     tech: [React, Js, Css, Html],
   },
 ]

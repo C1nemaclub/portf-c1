@@ -6,6 +6,7 @@ import Contact from "./components/Contact/index"
 import Projects from "./components/Projects/index"
 import Sidebar from "./components/Sidebar/index"
 import Startscreen from "./components/Startscreen/index"
+import CVButton from "./components/CVButton/index"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/start" element={<Startscreen />} />
         </Routes>
+        <CVButton />
       </Router>
     </>
   )
